@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript2</title>
+</head>
+<body>
+	<script>
+		// day 3 excercise
+
+			let firstName = "Aanuoluwapo";  //1
+            console.log(typeof("firstName"));
+            let lastName = "Akinyemi";
+            console.log (typeof(lastName)); 
+            let country = "Canada";
+            console.log (typeof(country));
+            let city = "ontario";
+            console.log (typeof(city));
+            let age ="20";
+            console.log (typeof(age));
+            let isMarried = "false";
+            console.log(typeof(isMarried));
+
+
+           
+
+            let typeOf =typeof(check); //2
+            	if (typeOf==10){
+            		console.log("true");
+            	}else{
+            		console.log("false");
+            	}
+
+                //or
+                console.log(typeof('10')==10);
+
+
+            	let num = parseInt("9.8"); //3
+            	if(num==10){
+            		console.log("correct");
+            	}else{
+            		console.log("otherwise return false")
+            	}
+
+                //or
+                console.log(parseInt('9.8')==10)
+
+
+            	let welcome = "7";  //4
+            	if(welcome==7){
+            		console.log("7")
+            	}else{
+            		console.log("false")
+            	}
+
+            	let goodbye ="yes";
+            	if (goodbye=="yes") {
+            		console.log("yes");
+            	}else{
+            		console.log("no");
+            	}
+				let youLookFine ="smile";
+            	if (youLookFine=='smile') {
+            		console.log("smile");
+            	}else{
+            		console.log("ugly");
+            	}
+
+            	let come = "0";  //4b
+            	if(come==0){
+            		console.log("0")
+            	}else{
+            		console.log("true")
+            	}
+
+            	let bye ="null";
+            	if (bye=="null") {
+            		console.log("null");
+            	}else{
+            		console.log("no");
+            	}
+				let fine ="NaN";
+            	if (fine=='NaN') {
+            		console.log("NaN");
+            	}else{
+            		console.log("disagreed");
+            	}
+
+
+            	console.log(4>3) //5
+            	console.log(4>=3)
+            	console.log(4<3)
+            	console.log(4<=3)
+            	console.log(4==4)
+            	console.log(4===4)
+            	console.log(4!=4)
+            	console.log(4!==4)
+            	console.log(4!='4')
+            	console.log(4=='4')
+            	console.log(4==='4')
+            	console.log('python'.lenght!=='jargon'.lenght)
+
+            	console.log(4>3 && 10<12) //6
+            	console.log(4>3 && 10>12)
+            	console.log(4>3 || 10<12)
+            	console.log(4>3 || 10>12)
+            	console.log(!4>3)
+            	console.log(!4<3)
+            	console.log(!false)
+            	console.log(!4>3 && 10<12)
+            	console.log(!4>3 && 10>12)
+            	console.log(!4==='4')
+
+            	let text1 = "python";
+            	let text2 = "dragon";
+            	if (text1.includes('on') && text2.includes('on')) {
+            		console.log(true)
+            	}else{
+            		console.log(false)
+            	}
+
+               const today = new Date(); //7
+               console.log(today.getFullYear())
+
+               const mon = new Date();
+               console.log(mon.getMonth())
+
+               const tue = new Date();
+               console.log(tue.getDate())
+
+
+
+               const wed = new Date();
+               console.log(wed.getHours())
+
+               const thur = new Date();
+               console.log(thur.getMinutes())
+
+               const ages = new Date();
+               console.log(ages.getTime())
+                    //or
+               const long = Date.now();
+               console.log(long)
+               const ago = new Date().getTime();
+               console.log(long==ago);
+
+               
+
+                // day 3 Exercise:Level 2
+
+                let base = prompt('20', 'base'); //1
+                let height = prompt('10', 'height');
+                let areaOfaTriangle = (0.5 * 20 * 10);
+                console.log(areaOfaTriangle);
+
+
+                let a  = prompt('5', 'a'); //2
+                let b = prompt('4', 'b');
+                let c = prompt('3', 'c');
+                let perimeterOfaTriangle = (5+ 4+3);
+                console.log(perimeterOfaTriangle);
+
+                let lenght = prompt('enter lenght', 'lenght');//3
+                let width = prompt('enter width', 'width');
+                let areaOfaRectangle =lenght * width;
+                let perimeterOfaRectangle = 2*(lenght+width);
+                console.log(areaOfaRectangle);
+                console.log(perimeterOfaRectangle);
+
+
+
+
+
+
+                let radius = prompt('100', 'radius'); //4
+                const PI = 3.14
+                const areaOfaCircle = 3.14 * 100 * 100;
+                console.log(areaOfaCircle);
+
+                let theUser = prompt('40', 'hours'); //9
+                let uses = prompt('28', 'rate per hour');
+                let payOfaPerson = 40*28;
+                console.log(payOfaPerson);
+
+                let name = 'Aanuoluwapo' //10
+                if (name >= '7') {
+                    console.log('my name is longer than 7')
+                }else{
+                    console.log('my name is shorter than 7')
+                }
+
+                let myName = 'Aanuoluwapo' //11
+                let familyName = 'Akinyemi'
+
+                if ('myName.lenght' >= 'familyName.lenght') {
+                    console.log('Aanuoluwapo is longer than Akinyemi')
+                }else{
+                    console.log('Aanuoluwapo is not longer than my family name')
+                }
+
+                let myAge = 250; //12
+                let yourAge = 25;
+                let minusYourAge = 225;
+                if ('minusYourAge' <= 'myAge') {
+                    console.log('I am 225 years older than you')
+                }else{
+                    console.log('I am not 225 years older than you ')
+                }
+
+                const userAge = prompt("Enter your age"); //13
+               if (userAge>= 18) {
+                  console.log('You are old enough to drive')
+               }else{
+                  console.log(`You are left with ${18-parseInt(userAge)}`)
+               }
+
+                // const usersYear = prompt("Enter your Year", '100'); //14
+                //   console.log(usersYear.getSeconds())
+
+
+                const now = new Date(); //15
+                const year = now.getFullYear();
+                const month = now.getMonth();
+                const date = now.getDate();
+                const hour = now.getHours();
+                const minutes = now.getMinutes();
+               console.log(`${now}-${year}-${month}-${date}-${hour}:${minutes}`)
+
+
+                const no = new Date();
+                const d = no.getDate();
+                const m = no.getMonth();
+                const y = no.getFullYear();
+                const h = no.getHours();
+                const mi = no.getMinutes();
+               console.log(`${no}-${d}-${m}-${y}-${h}:${mi}`)
+
+               //level 3 excercise: level 3
+
+
+                let newMonth =new Date();  //3
+               console.log(`$newMonth.toMonthString()}${newMonth.toTimeString()}`);
+
+
+
+               //day 4 excercise: level 1
+
+                const yours = prompt("Enter your age"); //1
+               if (yours>= 18) {
+                  console.log('You are old enough to drive')
+               }else{
+                  console.log(`You are left with ${18-parseInt(yours)}`)
+               }
+
+
+                const yAge = prompt("Enter your age"); //2
+                const mAge = 30;
+               if (yAge>= 30) {
+                  console.log('You are 5 years older than me')
+               }else{
+                  console.log(`You are younger than me `)
+               }
+
+               //if else
+
+               let j = 4;    //3
+               let e = 3;
+               if (j>e) {
+                console.log('4 is greater than 3')
+               }else{
+                console.log('4 is less than 3')
+               }
+               //tenary
+
+                let s = 4;    //3
+               let u = 3
+                ? console.log('4 is greater than 3.')
+            
+                :console.log('4 is less than 3.')
+
+                let even = 4;  //4
+                if (even %4 == 0) {
+                    console.log('the number is even')
+                }else{
+                    console.log('it is odd')
+                }
+
+                let odd = 11;
+                if (odd %11 == 0) {
+                    console.log('the number is odd')
+                }else{
+                    console.log('it is even')
+                }
+
+
+
+
+                // excercise:level 2
+
+
+
+                //80-100,70-89,60-69,50-59,0-49
+
+                let grades = prompt('what is your score?'); //1
+                	switch (grades) {
+                    case '80>=100':
+                    console.log('Excellent')
+                    break
+
+                    case '70>=89':
+                    console.log('Very good')
+                    break
+
+                    case '60>=69':
+                    console.log('Good')
+                    break
+
+                    case '50>59':
+                    console.log('Average')
+                    break
+
+                    case '0>=49':
+                    console.log('Fail')
+                    break
+
+                    default:
+                    console.log('you need to re-sit')
+
+                }
+
+                //Autumn, winter, spring, summer
+
+                let season =prompt ('what month is this?');		//2
+                let autumn = ['september', 'october', 'november'];;
+                let winter = ['december', 'january', 'february'];
+                let spring = ['march', 'april', 'may'];
+                let summer = ['june', 'july', 'august'];
+
+                switch (season) {
+                    case'autumn===autumn':
+                    console.log('The season is autumn')
+                    break
+
+                     case'winter===winter':
+                    console.log('We are in winter period')
+                    break
+
+                     case'spring===spring':
+                    console.log('welcome to spring')
+                    break
+
+                     case'summer===summer':
+                    console.log('Summer holiday is here')
+                    break
+
+                    default:
+                    console.log('you dont know your season')
+                }
+
+               
+
+              
+               
+
+
+
+
+
+
+              
+              
+        
+
+
+               
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+            
+            	
+</script>
+</body>
+</html>
